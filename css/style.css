@@ -65,42 +65,91 @@ header{
     background-color: rgba(0, 0, 0, 0.65);
     padding-top: 25px;
     padding-bottom: 12px;
+    position: absolute;
+    width: 100%;
 }
 header .container .logo{
     float: left;
-    /*width: 100%;*/
 }
-header .container .search{
-    float: left;
-    display: inline-block;
-    width: 208px;
+
+header .search{
     border: none;
     background-color: #ebebeb;
-    line-height: 42px;
-    margin-left: 25px;
+    float: left;
+    margin-left: 5px;
+    width: 208px;
+    border-radius: 3px;
 }
+
 header .container .search input{
     border: none;
-    max-width: 100%;
-    background-color: #ebebeb;
+    background: none;
+    color: #989898;
     text-transform: uppercase;
     font-size: 15px;
-    text-indent: 16px;
     font-family: 'MetropolisMedium';
+    line-height: 12px;
+    padding: 15px 17px;
+    float: left;
+    width: 80%;
 }
-header .container .search button{
-    border: none;
-    background-color: transparent;
+
+header .container .search button:after{
+    content: "";
+    float: left;
+    font-size: 17px;
+    text-align: center;
 }
 header .container .search button .fa-search{
-    color: rgba(0, 0, 0, 0.65);
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0,0,0,0.65);
+}
+header .container .search button{
+    float: right;
+    width: 19%;
+    border: none;
+    background: none;
+    margin-top: 12px;
+}
+header .container .search input:focus {
+    outline: none;
+}
+header .container .search button:active {
+    outline: none;
 }
 header .container .search button:hover .fa-search{
     color: red;
 }
 
+header .container .btn{
+    float: right;
+    background-color: red;
+    min-width: 170px;
+    line-height: 42px;
+    border-radius: 3px;
+    margin-right: 25px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    font-family: 'MetropolisMedium';
+}
+header .container .dark_silver{
+    background-color: #252525;
+}
+header .container .silver {
+    background-color: #464646;
+}
 
-
+header .container .btn:hover{
+    color: red;
+    background: transparent;
+}
+header .border{
+    border-bottom: solid 2px #464646;
+}
 
 
 
