@@ -1,3 +1,59 @@
+@font-face {
+    font-family: 'MetropolisMedium';
+    src: url('../fonts/MetropolisMedium.eot');
+    src: url('../fonts/MetropolisMedium.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisMedium.woff2') format('woff2'),
+    url('../fonts/MetropolisMedium.woff') format('woff'),
+    url('../fonts/MetropolisMedium.ttf') format('truetype'),
+    url('../fonts/MetropolisMedium.svg#MetropolisMedium') format('svg');
+}
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('../fonts/BebasNeueRegular.eot');
+    src: url('../fonts/BebasNeueRegular.eot') format('embedded-opentype'),
+    url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+    url('../fonts/BebasNeueRegular.woff') format('woff'),
+    url('../fonts/BebasNeueRegular.ttf') format('truetype'),
+    url('../fonts/BebasNeueRegular.svg#BebasNeueRegular') format('svg');
+}
+@font-face {
+    font-family: 'MetropolisRegular';
+    src: url('../fonts/MetropolisRegular.eot');
+    src: url('../fonts/MetropolisRegular.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisRegular.woff2') format('woff2'),
+    url('../fonts/MetropolisRegular.woff') format('woff'),
+    url('../fonts/MetropolisRegular.ttf') format('truetype'),
+    url('../fonts/MetropolisRegular.svg#MetropolisRegular') format('svg');
+}
+@font-face {
+    font-family: 'NowBold';
+    src: url('../fonts/NowBold.eot');
+    src: url('../fonts/NowBold.eot') format('embedded-opentype'),
+    url('../fonts/NowBold.woff2') format('woff2'),
+    url('../fonts/NowBold.woff') format('woff'),
+    url('../fonts/NowBold.ttf') format('truetype'),
+    url('../fonts/NowBold.svg#NowBold') format('svg');
+}
+@font-face {
+    font-family: 'NowMedium';
+    src: url('../fonts/NowMedium.eot');
+    src: url('../fonts/NowMedium.eot') format('embedded-opentype'),
+    url('../fonts/NowMedium.woff2') format('woff2'),
+    url('../fonts/NowMedium.woff') format('woff'),
+    url('../fonts/NowMedium.ttf') format('truetype'),
+    url('../fonts/NowMedium.svg#NowMedium') format('svg');
+}
+@font-face {
+    font-family: 'MetropolisLight';
+    src: url('../fonts/MetropolisLight.eot');
+    src: url('../fonts/MetropolisLight.eot') format('embedded-opentype'),
+    url('../fonts/MetropolisLight.woff2') format('woff2'),
+    url('../fonts/MetropolisLight.woff') format('woff'),
+    url('../fonts/MetropolisLight.ttf') format('truetype'),
+    url('../fonts/MetropolisLight.svg#MetropolisLight') format('svg');
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +66,47 @@ header{
     padding-top: 25px;
     padding-bottom: 12px;
 }
+header .container .logo{
+    float: left;
+    /*width: 100%;*/
+}
+header .container .search{
+    float: left;
+    display: inline-block;
+    width: 208px;
+    border: none;
+    background-color: #ebebeb;
+    line-height: 42px;
+    margin-left: 25px;
+}
+header .container .search input{
+    border: none;
+    max-width: 100%;
+    background-color: #ebebeb;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-indent: 16px;
+    font-family: 'MetropolisMedium';
+}
+header .container .search button{
+    border: none;
+    background-color: transparent;
+}
+header .container .search button .fa-search{
+    color: rgba(0, 0, 0, 0.65);
+}
+header .container .search button:hover .fa-search{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
 .container{
     max-width: 1170px;
     margin: auto;
@@ -18,8 +115,4 @@ header{
     content: "";
     display: block;
     clear: both;
-}
-header .container .logo{
-    float: left;
-    width: 100%;
 }
