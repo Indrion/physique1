@@ -154,6 +154,7 @@ header .border{
 .menu {
     /*line-height: 1;*/
     /*margin: 0 auto 3em;*/
+    float: left;
 }
 
 .menu__list {
@@ -164,13 +165,13 @@ header .border{
 
 .menu__list .menu__item {
     float: left;
-    margin-right: 18px;
+    margin-right: 9px;
     margin-bottom: 12px;
 }
 
 .menu__list .menu__item  .menu__link {
     padding: 0 6px 10px;
-    border-bottom: solid 4px transparent;
+    /*border-bottom: solid 4px transparent;*/
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -184,12 +185,12 @@ header .border{
 }
 .menu--valentine .menu__item {
     position: relative;
-    margin: 0 1em;
+    /*margin: 0 1em;*/
 }
 
 .menu--valentine .menu__link {
     position: relative;
-    display: block;
+    /*display: block;*/
     min-width: 105px;
     text-align: center;
     color: #b5b5b5;
@@ -262,7 +263,7 @@ header .border{
 
 /* bottom line */
 .menu--valentine .menu__link::after {
-    bottom: 0;
+    bottom: 8px;
 }
 
 .menu--valentine .menu__item--current::before,
@@ -272,6 +273,33 @@ header .border{
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
+header .container .social_icon{
+    margin-top: 17px;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0,0,0,0.65);
+    float: right;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    margin-right: 16px;
+}
+header .container .icon{
+    margin: 5px 0;
+}
+header .container .fa-facebook-f{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: 12px;
+}
+.social_icon:hover .icon{
+    color: white;
+}
+/*.social_icon:after{*/
+    /*content: "";*/
+    /*display: block;*/
+    /*clear: both;*/
+/*}*/
 
 /*header ul{*/
     /*list-style: none;*/
