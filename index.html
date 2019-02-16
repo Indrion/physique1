@@ -15,6 +15,29 @@
             crossorigin="anonymous"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+    <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "explode",
+                    duration: 1000
+                }
+            });
+
+            $( "#opener" ).on( "click", function() {
+                $( "#dialog" ).dialog( "open" );
+            });
+        } );
+    </script>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <title>Physique</title>
 </head>
@@ -25,7 +48,7 @@
     <a href="#" class="logo"><img src="images/logo-phy.PNG" alt=""></a>
     <!--btn_log-in_etc.-->
     <a href="#" class="btn red"><i class="fas fa-user-plus" style="font-size: 18px; margin-right: 15px"></i>sign up now</a>
-    <a href="#" class="btn silver"><i class="fas fa-user" style="font-size: 18px; margin-right: 15px"></i>log in</a>
+    <a href="#" class="btn silver" id="opener"><i class="fas fa-user" style="font-size: 18px; margin-right: 15px"></i>log in</a>
     <a href="#" class="btn dark_silver"><i class="fas fa-shopping-cart" style="font-size: 18px; margin-right: 15px"></i>online store</a>
     <!--search-->
     <form action="" method="post" class="search">
@@ -142,4 +165,17 @@
     })(window);
 </script>
 </body>
+<div id="dialog" title="FORGOT YOUR PASSWORD?">
+    <form class="password" action="" method="post" >
+        <lable>
+            ENTER YOUR EMAIL
+        </lable>
+        <input type="e-mail" name="e-mail" placeholder="e-mail">
+        <button>
+            RESET PASSWORD
+        </button>
+    </form>
+    <h4>or</h4>
+    <a href="https://www.facebook.com/" class="login_fb"><i class="fab fa-facebook-f icon"></i>Log In Using Facebook</a>
+</div>
 </html>
