@@ -31,7 +31,7 @@
     }
     .title h1{
         font-size: 50px;
-        bottom: 45%;
+        bottom: 50%;
     }
 }
 @media screen and (max-width: 992px){
@@ -100,6 +100,12 @@
     }
     .menu--valentine .menu__link::before{
         left: 1px;
+    }
+    .title img{
+        display: none;
+    }
+    .title h1{
+        display: none;
     }
 
 }
@@ -184,10 +190,7 @@
     .menu--valentine .menu__link::after{
         bottom: 10px;
     }
-    .title h1{
-        font-size: 30px;
-        top: 200%;
-    }
+
 }
 @media screen and (max-width: 768px){
     *{
@@ -277,14 +280,7 @@
     header .container {
         max-width: 540px;
     }
-    .title img {
-        display: none;
-    }
-    .title h1{
-        position: relative;
-        background-color: black;
-        padding-top: 10px;
-    }
+
 }
 @media screen and (min-width: 320px){
     header .container {
