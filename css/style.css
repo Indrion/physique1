@@ -97,7 +97,7 @@ header .container .search input{
     width: 80%;
 }
 
-header .container .search button:after{
+header .container .search input:after button{
     content: "";
     float: left;
     font-size: 17px;
@@ -128,7 +128,7 @@ header .container .search button:hover .fa-search{
 header .container .btn{
     float: right;
     background-color: red;
-    min-width: 170px;
+    width: 170px;
     line-height: 42px;
     border-radius: 3px;
     margin-right: 25px;
@@ -276,7 +276,12 @@ header .border{
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
 }
-.social_icon{
+header .container span{
+    display: inline-block;
+    float: right;
+    text-align: center;
+}
+header .container .social_icon{
     margin-top: 17px;
     font-size: 20px;
     text-align: center;
@@ -284,6 +289,7 @@ header .border{
     float: right;
     width: 30px;
     height: 30px;
+    border-radius: 2px;
     background-color: red;
     margin-right: 16px;
 }
