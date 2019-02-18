@@ -310,29 +310,31 @@ header .container .fa-facebook-f{
     color: white;
 }
 .title{
+    position: relative;
+    z-index: -1;
     width: 100%;
     margin: auto;
 }
 .title img{
     width: 100%;
 }
-.h1{
-    position: absolute;
-    /*position: fixed;*/
-    width: 100%;
-    top: 40%;
-    left: 15%;
-}
-.h1 h1{
+/*.h1{*/
+    /*position: absolute;*/
+    /*!*position: fixed;*!*/
+    /*width: 100%;*/
+    /*top: 40%;*/
+    /*left: 15%;*/
+/*}*/
+.title h1{
     color: white;
     font-size: 50px;
     border-bottom: solid red 2px;
     text-transform: uppercase;
     text-align: center;
-    /*position: absolute;*/
-    /*width: 100%;*/
+    position: absolute;
+    width: 100%;
     /*margin-top: 100px;*/
-    /*top: 30%;*/
+    top: 70%;
     font-family: 'BebasNeueRegular'
 }
 .section{
